@@ -116,4 +116,4 @@ app.get("/directors/:directorId/movies/", async (request, response) => {
   response.send(directorMovies.map((movie) => directorMoviesList(movie)));
 });
 
-exports.app = app;
+module.exports = app;
